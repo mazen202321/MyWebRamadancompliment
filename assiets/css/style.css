@@ -1,0 +1,191 @@
+/* public */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:BERS ;
+    src:url(../font/BerkshireSwash-Regular.ttf);
+}
+@font-face{
+    font-family: adel-Regulr;
+    src:url(../font/Abel-Regular.ttf)
+}
+:root{
+--main-clor:#340638 ;
+--font-color:#ffff;
+}
+img{
+    width: 100%;
+  
+}
+/* end public */
+.contener{
+    width: 90%;
+  margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    
+
+}
+.audio{
+  width: 0px;
+    
+    opacity: 0;
+}
+.hedar{
+    background-color: var(--main-clor) ;
+    height: 100vh;
+}
+.lantern-img-left{
+   width:  30%;
+  
+    order: 0;
+}
+
+.lantern-img-left img{
+    width: 33.3%;
+   height: 70vh;
+  
+}
+
+
+.lantern-img-right{
+    width: 30%;
+  
+    order: 2;
+}
+.lantern-img-right img{
+    width: 33.3%;
+    height: 70vh;
+   
+}
+.rmdan-photo1 {
+    animation-name: shrink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.rmdan-photo2{
+    animation-name: shrink;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.rmdan-photo3{
+    animation-name: shrink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shrink{
+    0%{
+        height: 60vh;
+    }
+    100%{
+        height: 70vh;
+    }
+}
+.prgraph{
+    padding-top:10%;
+    width: 40%;
+    order: 1;
+}
+.R-prgraph{
+    color: var(--font-color);
+    font-family: BERS;
+    width: 100%;
+    font-size: 87px;
+}
+
+.cong{
+    padding-top: 10px;
+    color: var(--font-color);
+    font-family: adel-Regulr;
+    font-size: 26px;
+}
+@media(max-width:597px){
+    .prgraph{
+        padding-top:30%;
+        width: 70%;
+    }
+    .R-prgraph{
+        font-size: 36px;
+    }
+    @keyframes shrink{
+        0%{
+            height: 50vh;
+        }
+        100%{
+            height: 60vh;
+        }
+    }
+    .cong{
+        padding-top: 5px;
+        font-size: 18px;
+    }
+    .lantern-img-right{
+        display: none;
+        width: 0%;
+      
+    }
+    }
+  
+@font-face{
+    font-family: francoiisone;
+    src: url(../font/FrancoisOne-Regular.ttf);
+}
+.to-link{
+    margin-top: 50px;
+    color: #ffff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 90%;
+    height: 50px;
+    border: 1px solid;
+   text-align: center;
+    font-size: large;
+    transition: all 1s;
+    border-radius: 20px;
+    padding: 10px;
+    
+    font-family: francoiisone;
+    
+}
+@media(max-height:597px){
+    .hedar{
+height: fit-content;
+padding-bottom: 10px;
+    }
+    .prgraph{
+        padding-top:5%;
+        
+    }
+    .R-prgraph{
+        font-size: 36px;
+    }
+    .con{
+        font-size: 18px;
+    }
+    .to-link{
+        margin-top: 30px;
+    }
+}
+.to-link i{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.to-link:hover{
+    color: blueviolet;
+    background-color: #ffff;
+}
+.to-link:hover i{
+    margin-left: 2px;
+}
+
+
